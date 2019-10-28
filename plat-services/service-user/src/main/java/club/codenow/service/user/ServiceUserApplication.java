@@ -1,13 +1,13 @@
-package club.codenow;
+package club.codenow.service.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PlatServicesApplication {
+public class ServiceUserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PlatServicesApplication.class, args);
+        SpringApplication.run(ServiceUserApplication.class, args);
     }
 
 }
