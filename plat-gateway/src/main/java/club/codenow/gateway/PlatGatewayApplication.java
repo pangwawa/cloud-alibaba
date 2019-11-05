@@ -1,13 +1,13 @@
-package club.codenow.service.user;
+package club.codenow.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class  ServiceUserApplication{
+public class PlatGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceUserApplication.class, args);
+        SpringApplication.run(PlatGatewayApplication.class, args);
     }
 
 }

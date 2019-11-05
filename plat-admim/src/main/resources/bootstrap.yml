@@ -1,0 +1,16 @@
+spring:
+  thymeleaf:
+    servlet:
+      content-type: text/html
+      mode: LEGACYHTML5
+      encoding: UTF-8
+      cache: false
+    prefix: classpath:/templates/integral
+  application:
+    name: plat-admin
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.95.136:8848
+        file-extension: yml
+        namespace: bfaf7fc0-cf2e-4614-b760-537332fe9c47
