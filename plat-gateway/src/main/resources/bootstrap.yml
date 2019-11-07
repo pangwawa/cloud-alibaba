@@ -1,0 +1,10 @@
+server:
+  port: 8083
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: method_route
+          uri: https://example.org
+          predicates:
+            - Method=GET

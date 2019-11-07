@@ -17,6 +17,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>plat-gateway</module>
         <module>plat-common</module>
         <module>plat-admim</module>
         <module>plat-services</module>
@@ -25,6 +26,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud-alibaba.version>0.9.0.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
@@ -39,7 +41,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Greenwich.SR2</version>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
