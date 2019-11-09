@@ -1,4 +1,4 @@
-package club.codenow.gateway;
+package club.codenow.gateway.test;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
