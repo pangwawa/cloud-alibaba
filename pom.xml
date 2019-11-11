@@ -21,6 +21,7 @@
         <module>plat-common</module>
         <module>plat-admim</module>
         <module>plat-services</module>
+        <module>plat-blog</module>
     </modules>
 
     <properties>
