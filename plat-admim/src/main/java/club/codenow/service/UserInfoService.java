@@ -1,4 +1,4 @@
-package club.codenow.services.user.service;
+package club.codenow.service;
 
 
 import org.springframework.cloud.openfeign.FeignClient;
@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Version:
  * @Description:
  */
+@FeignClient(name = "plat-services-user")
 public interface UserInfoService {
+    @RequestMapping(value = "/usertest")
     String getUserInfo();
 }

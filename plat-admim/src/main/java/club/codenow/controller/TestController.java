@@ -1,6 +1,7 @@
 package club.codenow.controller;
 
 import club.codenow.service.TestInterface;
+import club.codenow.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,9 +24,10 @@ public class TestController {
     public Object testController(){
         return testInterface.getTestString();
     }
+    @Autowired
+    UserInfoService userInfoService;
     @GetMapping(value = "/calluserinfoservice")
     public Object getFeginService(){
-        //return restTemplate.getForObject("http://plat-services-user/userinfo/queryuserinfo",String.class);
-        return null;
+        return userInfoService.getUserInfo();
     }
 }

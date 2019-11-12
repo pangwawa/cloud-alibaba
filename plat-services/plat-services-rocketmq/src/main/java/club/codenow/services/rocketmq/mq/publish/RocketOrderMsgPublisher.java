@@ -8,6 +8,7 @@ import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.remoting.exception.RemotingException;
+import org.springframework.stereotype.Service;
 
 /**
  * @Author: Jack Wu
@@ -19,11 +20,12 @@ import org.apache.rocketmq.remoting.exception.RemotingException;
  *                使用 官方API方式实现（除此也可使用MessageChannel）
  */
 @Slf4j
+@Service
 public class RocketOrderMsgPublisher{
     //发送可靠异步消息
     public void publish(String namesrvAddr,String topic,String tag,String messageContent) throws MQClientException {
         //创建带有Group Name的MQ生产者对象
-        DefaultMQProducer producer=new DefaultMQProducer(RocketMQConfigParams.ROCKETMQ_GROUP_NAME);
+        DefaultMQProducer producer=new DefaultMQProducer();
         //设置MQ服务器
         producer.setNamesrvAddr(namesrvAddr);
         //运行实例对象
