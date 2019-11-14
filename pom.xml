@@ -22,6 +22,7 @@
         <module>plat-admim</module>
         <module>plat-services</module>
         <module>plat-blog</module>
+        <module>plat-dubbo-services</module>
     </modules>
 
     <properties>
