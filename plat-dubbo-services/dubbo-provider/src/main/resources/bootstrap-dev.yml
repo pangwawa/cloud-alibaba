@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: dubbo-provider
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.95.136:8848
+        file-extension: yml
+        namespace: bfaf7fc0-cf2e-4614-b760-537332fe9c47
+
+dubbo:
+  registry:
+    address: nacos://192.168.95.136:8848
+  #config-center:
+     #namespace: bfaf7fc0-cf2e-4614-b760-537332fe9c47
+  scan:
+    base-packages: club.codenow.dubbo.provider.service
+  application:
+    name: dubbo-provider
+  protocol:
+    port: -1
+    name: dubbo
