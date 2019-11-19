@@ -8,18 +8,23 @@
     <name>plat-dubbo-services</name>
     <description>平台Dubbo服务项目根目录</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
     <packaging>pom</packaging>
 
     <modules>
         <module>dubbo-provider</module>
         <module>dubbo-customer</module>
+        <module>dubbo-api</module>
     </modules>
-    <dependencies>
-    </dependencies>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
