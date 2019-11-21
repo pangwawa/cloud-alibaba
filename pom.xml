@@ -23,6 +23,7 @@
         <module>plat-services</module>
         <module>plat-blog</module>
         <module>plat-dubbo-services</module>
+        <module>plat-cas</module>
     </modules>
 
     <properties>

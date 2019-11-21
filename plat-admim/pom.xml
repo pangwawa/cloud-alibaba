@@ -26,6 +26,13 @@
             <version>1.0.0</version>
         </dependency>
 
+        <!--user服务接口-->
+        <dependency>
+            <groupId>club.codenow</groupId>
+            <artifactId>plat-services-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>

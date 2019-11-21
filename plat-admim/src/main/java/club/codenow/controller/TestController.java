@@ -1,7 +1,8 @@
 package club.codenow.controller;
 
+import club.codenow.api.user.UserInfoService;
 import club.codenow.service.TestInterface;
-import club.codenow.service.UserInfoService;
+//import club.codenow.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

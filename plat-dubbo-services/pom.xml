@@ -10,11 +10,11 @@
 
     <packaging>pom</packaging>
 
-    <modules>
+    <!--<modules>
         <module>dubbo-provider</module>
         <module>dubbo-customer</module>
         <module>dubbo-api</module>
-    </modules>
+    </modules>-->
 
     <properties>
         <java.version>1.8</java.version>

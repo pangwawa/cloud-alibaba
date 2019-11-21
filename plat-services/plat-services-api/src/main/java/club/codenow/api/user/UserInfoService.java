@@ -1,4 +1,4 @@
-package club.codenow.service;
+package club.codenow.api.user;
 
 
 import org.springframework.cloud.openfeign.FeignClient;

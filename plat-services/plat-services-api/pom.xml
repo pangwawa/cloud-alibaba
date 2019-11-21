@@ -8,41 +8,33 @@
         <version>1.0.0</version>
     </parent>
     <groupId>club.codenow</groupId>
-    <artifactId>plat-cas</artifactId>
+    <artifactId>plat-services-api</artifactId>
     <version>1.0.0</version>
-    <name>plat-soa</name>
-    <description>权限校验，单点登录， 对外开放接口权限校验</description>
+    <name>plat-services-api</name>
+    <description>cloud feign调用公共接口</description>
 
     <properties>
         <java.version>1.8</java.version>
-        <!--<cas.version>5.3.x</cas.version>-->
     </properties>
+    <packaging>jar</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <!--config-->
+        <!--feign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/net.unicon.cas/cas-client-autoconfig-support -->
         <dependency>
-            <groupId>net.unicon.cas</groupId>
-            <artifactId>cas-client-autoconfig-support</artifactId>
-            <version>1.7.0-GA</version>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
     </dependencies>
 
