@@ -12,10 +12,11 @@
     </properties>
     <packaging>pom</packaging>
 
-    <!--<modules>
+    <modules>
         <module>plat-services-user</module>
         <module>plat-services-rocketmq</module>
-    </modules>-->
+        <module>plat-services-api</module>
+    </modules>
     <dependencies>
     </dependencies>
 

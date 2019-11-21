@@ -10,7 +10,7 @@
     <groupId>club.codenow</groupId>
     <artifactId>plat-cas</artifactId>
     <version>1.0.0</version>
-    <name>plat-soa</name>
+    <name>plat-cas</name>
     <description>权限校验，单点登录， 对外开放接口权限校验</description>
 
     <properties>
