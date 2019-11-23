@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
     @Override
-    public String getUserInfo() {
-        return "User Services getUserInfo";
+    public String getUserInfo(String username) {
+        return "username:"+username;
     }
 }

@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Description:
  */
 public interface UserInfoService {
-    String getUserInfo();
+    String getUserInfo(String username);
 }
