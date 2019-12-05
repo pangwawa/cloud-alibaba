@@ -24,6 +24,8 @@
         <docker.registry.host>http://${docker.registry.url}:5000</docker.registry.host>
         <docker.plugin.version>1.2.0</docker.plugin.version>
 
+        <xxl.version>2.1.1</xxl.version>
+
     </properties>
 
     <dependencies>
@@ -84,6 +86,13 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
         </dependency>
+
+        <!-- xxl-job-core -->
+        <dependency>
+            <groupId>com.xuxueli</groupId>
+            <artifactId>xxl-job-core</artifactId>
+            <version>${xxl.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -98,7 +107,7 @@
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${docker.plugin.version}</version>
-                <configuration>
+                <!--<configuration>
                     <imageName>${project.artifactId}:${project.version}</imageName>
                     <baseImage>alpine-3.8.0-docker-image:2.0</baseImage>
                     <maintainer>author author@email.com</maintainer>
@@ -106,10 +115,22 @@
                     <workdir>/ROOT</workdir>
                     <cmd>["java", "-version"]</cmd>
                     <entryPoint>["java", "-jar", "${project.build.finalName}.jar"]</entryPoint>
-                    <!-- 这里是复制 jar 包到 docker 容器指定目录配置 -->
+                    &lt;!&ndash; 这里是复制 jar 包到 docker 容器指定目录配置 &ndash;&gt;
                     <resources>
                         <resource>
                             <targetPath>/ROOT</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>-->
+                <configuration>
+                    <!-- made of '[a-z0-9-_.]' -->
+                    <imageName>${project.artifactId}:${project.version}</imageName>
+                    <dockerDirectory>${project.basedir}</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
                             <directory>${project.build.directory}</directory>
                             <include>${project.build.finalName}.jar</include>
                         </resource>

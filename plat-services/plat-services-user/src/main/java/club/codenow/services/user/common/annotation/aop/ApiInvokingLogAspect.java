@@ -1,7 +1,7 @@
 package club.codenow.services.user.common.annotation.aop;
 
 import club.codenow.services.user.common.annotation.ApiInvokingLog;
-import com.google.gson.Gson;
+//import com.google.gson.Gson;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -34,7 +34,7 @@ public class ApiInvokingLogAspect {
         String api=annotation.api();
         RequestMethod requestMethod=annotation.requestMethod();
         System.out.println("do before: api，"+api+",requestMethod,"+requestMethod);
-        System.out.println("参数："+new Gson().toJson(joinPoint.getArgs()));
+        //System.out.println("参数："+new Gson().toJson(joinPoint.getArgs()));
         long startTime=System.currentTimeMillis();
         startTimeThreadLocal.set(startTime);
     }
