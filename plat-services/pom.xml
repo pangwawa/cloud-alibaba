@@ -15,7 +15,6 @@
     <modules>
         <module>plat-services-user</module>
         <module>plat-services-rocketmq</module>
-        <module>plat-services-api</module>
     </modules>
     <dependencies>
     </dependencies>
