@@ -1,5 +1,6 @@
 package club.codenow.services.user.controller;
 
+import club.codenow.feign.api.user.UserInfoClientApi;
 import club.codenow.services.user.common.annotation.ApiInvokingLog;
 import club.codenow.services.user.service.UserInfoService;
 import lombok.extern.slf4j.Slf4j;
@@ -17,12 +18,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
-public class TestController {
+public class TestController implements UserInfoClientApi {
     @Autowired
     UserInfoService userInfoService;
+    @Override
     @GetMapping(value = "/usertest")
     @ApiInvokingLog(api = "/usertest",requestMethod = RequestMethod.GET )
-    public  Object getUserInfo(String username){
+    public  String getUserInfo(String username){
         log.info("user 服务的 usertest方法调用");
         return userInfoService.getUserInfo(username);
     }
@@ -31,5 +33,7 @@ public class TestController {
     public Object test(){
         return null;
     }
+
+
 
 }

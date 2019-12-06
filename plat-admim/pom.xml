@@ -26,10 +26,11 @@
             <version>1.0.0</version>
         </dependency>
 
+        <!--平台公共模块-->
         <!--user服务接口-->
         <dependency>
             <groupId>club.codenow</groupId>
-            <artifactId>plat-services-api</artifactId>
+            <artifactId>feign-user-api</artifactId>
             <version>1.0.0</version>
         </dependency>
 
