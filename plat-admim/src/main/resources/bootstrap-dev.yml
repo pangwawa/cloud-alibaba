@@ -4,10 +4,10 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: 192.168.95.136:8848
+        server-addr: 192.168.95.138:8848
         file-extension: yml
         namespace: bfaf7fc0-cf2e-4614-b760-537332fe9c47
       discovery:
-        server-addr: 192.168.95.136:8848
+        server-addr: 192.168.95.138:8848
         namespace: bfaf7fc0-cf2e-4614-b760-537332fe9c47
         cluster-name: cluster-02
