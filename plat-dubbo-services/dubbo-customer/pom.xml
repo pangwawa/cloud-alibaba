@@ -21,7 +21,7 @@
 
         <dependency>
             <groupId>club.codenow</groupId>
-            <artifactId>dubbo-api</artifactId>
+            <artifactId>dubbo-api-provider</artifactId>
             <version>1.0.0</version>
         </dependency>
 

@@ -15,6 +15,7 @@ import org.apache.dubbo.config.annotation.Service;
 public class ProviderServiceImpl implements ProviderService {
     @Override
     public String getTestString() {
+        System.out.println("dubbo provider 的getTestString()方法调用了 ");
         return "dubbo provider service  Get Test String ";
     }
 }
