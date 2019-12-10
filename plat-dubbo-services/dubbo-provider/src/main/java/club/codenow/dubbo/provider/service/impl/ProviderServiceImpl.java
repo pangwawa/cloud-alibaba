@@ -1,6 +1,6 @@
 package club.codenow.dubbo.provider.service.impl;
 
-import club.codenow.dubbo.provider.service.ProviderService;
+import club.codenow.dubbo.api.provider.ProviderService;
 import org.apache.dubbo.config.annotation.Service;
 
 

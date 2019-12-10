@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: dubbo-xml-provider
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.95.138:8848
+        file-extension: yml
+        namespace: bfaf7fc0-cf2e-4614-b760-537332fe9c47

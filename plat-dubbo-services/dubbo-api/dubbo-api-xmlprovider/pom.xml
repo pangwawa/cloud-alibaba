@@ -2,25 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>club.codenow</groupId>
+        <artifactId>dubbo-api</artifactId>
+        <version>1.0.0</version>
+    </parent>
     <groupId>club.codenow</groupId>
-    <artifactId>dubbo-api</artifactId>
+    <artifactId>dubbo-api-xmlprovider</artifactId>
     <version>1.0.0</version>
-    <name>dubbo-api</name>
-    <description>dubbo消费者的应用接口,将消费者公共调用接口抽离，减少代码工作量</description>
+    <name>dubbo-api-xmlprovider</name>
+    <description>api公共接口，dubbo服务消费者和提供者公用，减少代码量</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>dubbo-api-provider</module>
-        <module>dubbo-api-xmlprovider</module>
-    </modules>
-
     <dependencies>
-
+        
     </dependencies>
 
     <build>

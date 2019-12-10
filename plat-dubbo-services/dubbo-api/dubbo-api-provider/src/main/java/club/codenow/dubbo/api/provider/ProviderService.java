@@ -1,4 +1,4 @@
-package club.codenow.dubbo.provider.service;
+package club.codenow.dubbo.api.provider ;
 
 /**
  * @Author: Jack Wu
