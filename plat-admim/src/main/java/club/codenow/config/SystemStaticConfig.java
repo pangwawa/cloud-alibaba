@@ -12,14 +12,14 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class SystemStaticConfig {
-    public static String  systemAdmin;
-    public static String systemPassword;
-    @Value("${config.system.admin}")
-    public void setSystemAdmin(String systemAdmin){
-        SystemStaticConfig.systemAdmin=systemAdmin;
-    }
-    @Value("${config.system.password}")
-    public void setSystemPassword(String systemPassword){
-        SystemStaticConfig.systemPassword=systemPassword;
-    }
+//    public static String  systemAdmin;
+//    public static String systemPassword;
+//    @Value("${config.system.admin}")
+//    public void setSystemAdmin(String systemAdmin){
+//        SystemStaticConfig.systemAdmin=systemAdmin;
+//    }
+//    @Value("${config.system.password}")
+//    public void setSystemPassword(String systemPassword){
+//        SystemStaticConfig.systemPassword=systemPassword;
+//    }
 }

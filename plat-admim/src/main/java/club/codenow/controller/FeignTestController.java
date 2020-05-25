@@ -18,10 +18,11 @@ import org.springframework.web.client.RestTemplate;
 public class FeignTestController {
     @Autowired
     RestTemplate restTemplate;
-    @Autowired
-    UserInfoClientApi userInfoClientApi;
+//    @Autowired
+//    UserInfoClientApi userInfoClientApi;
     @GetMapping(value = "/calluserinfoservice")
     public Object getFeginService(){
-        return userInfoClientApi.getUserInfo("test username");
+        return null;
+//        return userInfoClientApi.getUserInfo("test username");
     }
 }

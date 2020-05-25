@@ -19,7 +19,8 @@ public class GateWayConfiguration {
         return builder.routes()
                 .route(p -> p
                         .path("/usertest")
-                        .filters(f -> f.addRequestHeader("Hello", "World"))
+                        .filters(f -> f.addRequestHeader(
+                                "Hello", "World"))
                         .uri("http://localhost:18081"))
                 .build();
     }
