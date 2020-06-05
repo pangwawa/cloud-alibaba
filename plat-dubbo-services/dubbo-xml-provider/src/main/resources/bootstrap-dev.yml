@@ -16,3 +16,4 @@ dubbo:
     server: 120.78.89.177
     parameters[namespace]: 6f04ac02-3707-4101-ad49-21e523ea760f
     address: nacos://120.78.89.177:8848
+    version: 1.0.0

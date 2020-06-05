@@ -10,7 +10,7 @@
     <dubbo:application name="dubbo-xml-provider"  />
 
     <!-- 使用 Nacos 注册中心 -->
-    <dubbo:registry address="nacos://120.78.89.177:8848?namespace=6f04ac02-3707-4101-ad49-21e523ea760f"  port="20882"/>
+    <dubbo:registry address="nacos://120.78.89.177:8848?namespace=6f04ac02-3707-4101-ad49-21e523ea760f"  port="20882" version="1.0.0"/>
     <!-- 声明服务生产者实现类，并基于dubbo暴露服务 -->
     <!--
             Failover Cluster ：失败自动切换，当出现失败，重试其它服务器，通常用于读操作（推荐使用）
@@ -21,6 +21,6 @@
             Broadcast Cluster : 广播调用所有提供者，逐个调用，任意一台报错则报错，通常用于更新提供方本地状态
     -->
     <bean id="xmlProviderApi" class="club.codenow.dubbo.provider.service.impl.XmlProviderApiImpl"/>
-    <dubbo:service interface="club.codenow.dubbo.api.xmlprovider.XmlProviderApi" ref="xmlProviderApi"  cluster="failfast"/>
+    <dubbo:service interface="club.codenow.dubbo.api.xmlprovider.XmlProviderApi" ref="xmlProviderApi"  cluster="failfast" version="1.0.0"/>
 
 </beans>
