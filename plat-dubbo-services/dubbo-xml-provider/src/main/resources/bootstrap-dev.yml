@@ -4,6 +4,15 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: 192.168.95.138:8848
+        server-addr: 120.78.89.177:8848
         file-extension: yml
-        namespace: bfaf7fc0-cf2e-4614-b760-537332fe9c47
+        namespace: 6f04ac02-3707-4101-ad49-21e523ea760f
+dubbo:
+  config-center:
+    namespace: 6f04ac02-3707-4101-ad49-21e523ea760f
+  application:
+    name: dubbo-xml-provider
+  registry:
+    server: 120.78.89.177
+    parameters[namespace]: 6f04ac02-3707-4101-ad49-21e523ea760f
+    address: nacos://120.78.89.177:8848
