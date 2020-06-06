@@ -14,6 +14,7 @@
     <description>平台服务监控管理</description>
 
     <packaging>pom</packaging>
+    <name>plat-control</name>
 
     <modules>
         <module>dubbo-admin-ui</module>
